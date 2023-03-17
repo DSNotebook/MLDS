@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html >
+<title> Wine_Quality_Predict</title>
+
+<body>  
+  
+ 
+    <h1><font color="#311B92">wine quality predict</font></h1>
+   
+    <form action="{{ url_for('predict')}}"method="post">
+
+    	<input type="text" name="type" placeholder="type0" required="required"/><br><br>
+     	<input type="text" name="fixed acidity" placeholder="fixed acidity1" required="required" />
+	<input type="text" name="volatile accidity" placeholder="volatile accidity2"  required="required" />
+	<input type="text" name="critic acid" placeholder="critic acid3" required="required"/><br><br>
+     	<input type="text" name="residual sugar" placeholder="residual sugar4" required="required" />
+	<input type="text" name="chlorides" placeholder="chlorides5" required="required" />
+	<input type="text" name="free sulfor dioxide" placeholder="free sulfor dioxide6" required="required"/>
+     	<input type="text" name="total sulfet dioxide" placeholder="total sulfet dioxide7" required="required" /><br><br>
+	<input type="text" name="density" placeholder="density8" required="required" />
+	<input type="text" name="pH" placeholder="pH9" required="required"/>
+     	<input type="text" name="sulphates" placeholder="sulphates10" required="required" />
+	<input type="text" name="alcohol" placeholder="alcohol11" required="required" />
+<h3>---------------------------------------------------------------------------------------------------------</h3>
+
+
+     <button type="submit"><font color="blue">Predict Now</font></button>
+
+<img src="file:///C:/Users/ravik/Data_Science/WQT%20App/templates/index.html"/>
+
+    </form>
+
+<img src="C:\Users\ravik\Data_Science\WQT App\stastic\features_imp.jpg" alt="graphs"/>
+ 
+   <h2><font color="#311B92"> {{ prediction_text }} </font></h2>
+</body>
+
+
+</html>
